@@ -1,0 +1,27 @@
+# Permalinks
+permalink:      :title.html
+
+# Setup
+title:          W I N
+paginate:       100
+baseurl:        ""
+url:            "https://win.kenokeno.bingo"
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         Keno
+  url:          http://kenokeno.bingo
+  email:        win@kenokeno.bingo
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed

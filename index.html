@@ -1,0 +1,19 @@
+---
+layout: default
+title: W I N
+---
+
+<div class="catalogue">
+  {% for post in paginator.posts %}
+    <a href="{{ post.url | prepend: site.url }}" class="catalogue-item">
+      <div>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+
+        <p>
+          {{ post.content }}
+        </p>
+
+      </div>
+    </a>
+  {% endfor %}
+</div>

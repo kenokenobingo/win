@@ -1,0 +1,42 @@
+.catalogue {
+    
+    iframe {
+        width: 100%;
+    }
+    
+    h1 {
+    font-family: $baskerville;
+    font-weight: 500;
+    font-size: 18pt;
+    margin: 2rem 0 1rem 0;
+}
+    
+  &-title {
+    color: $default-shade;
+    font-family: $sans-font;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0 0 0 0;
+    text-align: left;
+  }
+    
+  &-item {
+    width: 100%;
+    color: $default-color;
+    display: inline;
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  &-time {
+    color: $default-tint;
+    font-family: $palatino;
+    letter-spacing: .5px;
+  }
+
+  &-title::after {
+      font-weight: 400;
+      content: '';
+  }
+
+}

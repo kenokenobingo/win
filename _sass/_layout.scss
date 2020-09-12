@@ -1,0 +1,98 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+}
+
+main,
+footer,
+.nav-container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+}
+
+.nav {
+  overflow: auto;
+  vertical-align: baseline;
+
+  &-container {
+    margin: 1rem auto;
+    position: relative;
+    text-align: center;
+  }
+
+  &-title {
+    color: $default-color;
+    display: inline-block;
+    margin: 0;
+    padding-right: .2rem;
+    font-size: 18pt;
+    vertical-align: baseline;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      -webkit-animation: win 0.5s infinite;
+	  animation: win 0.5s infinite;  
+    }
+  }
+    
+    @keyframes win {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 1; }
+    }
+
+  ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: baseline;
+  }
+
+  li {
+    @include transition(all .2s ease-out);
+    color: $default-color;
+    font-size: 12pt;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 2rem 0 0;
+    vertical-align: baseline;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: $default-color;
+    font-family: $sans-font;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav {
+    &-container {
+      text-align: left;
+    }
+
+    ul {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+footer {
+  font-family: $palatino;
+  padding: 2rem 0;
+  text-align: center;
+
+  span {
+    color: $default-color;
+    font-size: .8rem;
+  }
+}
